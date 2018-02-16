@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="output:jar">
+    <output-path>$PROJECT_DIR$/../Minecraft/OUT-PUT</output-path>
+    <root id="archive" name="AdminControle.jar">
+      <element id="module-output" name="AdminControle" />
+    </root>
+  </artifact>
+</component>

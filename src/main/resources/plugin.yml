@@ -1,0 +1,9 @@
+main: com.twanl.admincontrole.AdminControle
+version: 1.5.6
+name: AdminControle
+author: T.L
+
+commands:
+  ad:
+    usage: /<command>
+    description: opens the main menu.

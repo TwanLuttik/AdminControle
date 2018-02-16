@@ -1,0 +1,17 @@
+#
+#
+#                <--- AdminControle --->
+#          Created by Twan Luttik, Config version 1.1
+#
+update_message: true
+kick_ops: false
+kick_message: Your are kicked from the server
+server_reload:
+  reload_countdown: 1200
+  reload_broadcast: true
+server_stop:
+  stop_countdown: 1200
+  stop_broadcast: true
+
+
+KicksTillBan: 2
