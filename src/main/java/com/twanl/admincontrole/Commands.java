@@ -49,8 +49,7 @@ public class Commands extends CommandExecute implements Listener, CommandExecuto
 
                     plugin.saveDefaultConfig();
                     plugin.reloadConfig();
-                    plugin.getServer().getConsoleSender().sendMessage(Strings.logName + Strings.green + "Config File Reloaded Succsesfully!");
-                    p.sendMessage(Strings.goldI + "Config File Reloaded Succsesfully!");
+                    p.sendMessage(Strings.green + "Config File Reloaded Succsesfully!");
 
                 } else {
                     p.sendMessage(Strings.noPerm);
@@ -74,19 +73,17 @@ public class Commands extends CommandExecute implements Listener, CommandExecuto
                 if (p.hasPermission(Permissions.ADMINCONTROLE_CREATECONFIG)) {
 
                     configFile = new File(plugin.getDataFolder(), "config.yml");
-                    File file2 = new File(plugin.getDataFolder(), "configBackup.yml");
+                    File file2 = new File(plugin.getDataFolder(), "config_old.yml");
 
 
                     if (configFile.exists()) {
-                        plugin.getServer().getConsoleSender().sendMessage(Strings.logName + Strings.green + "Succsesfully created a new config file!");
-                        p.sendMessage(Strings.goldI + "Succsesfully created a new config file!");
+                        p.sendMessage(Strings.green + "Succsesfully created a new config file!");
 
                         configFile.renameTo(file2);
                         plugin.saveDefaultConfig();
 
                     } else {
-                        plugin.getServer().getConsoleSender().sendMessage(Strings.logName + Strings.green + "File doesn't exist!");
-                        p.sendMessage(Strings.goldI + "File doesn't exist!");
+                        p.sendMessage(Strings.red + "File doesn't exist!");
                     }
 
                 } else {
